@@ -1,0 +1,16 @@
+E:\Everis\Series2\DIO.Series\obj\Debug\net5.0\DIO.Series.csproj.AssemblyReference.cache
+E:\Everis\Series2\DIO.Series\obj\Debug\net5.0\DIO.Series.GeneratedMSBuildEditorConfig.editorconfig
+E:\Everis\Series2\DIO.Series\obj\Debug\net5.0\DIO.Series.AssemblyInfoInputs.cache
+E:\Everis\Series2\DIO.Series\obj\Debug\net5.0\DIO.Series.AssemblyInfo.cs
+E:\Everis\Series2\DIO.Series\obj\Debug\net5.0\DIO.Series.csproj.CoreCompileInputs.cache
+E:\Everis\Series2\DIO.Series\bin\Debug\net5.0\DIO.Series.exe
+E:\Everis\Series2\DIO.Series\bin\Debug\net5.0\DIO.Series.deps.json
+E:\Everis\Series2\DIO.Series\bin\Debug\net5.0\DIO.Series.runtimeconfig.json
+E:\Everis\Series2\DIO.Series\bin\Debug\net5.0\DIO.Series.runtimeconfig.dev.json
+E:\Everis\Series2\DIO.Series\bin\Debug\net5.0\DIO.Series.dll
+E:\Everis\Series2\DIO.Series\bin\Debug\net5.0\ref\DIO.Series.dll
+E:\Everis\Series2\DIO.Series\bin\Debug\net5.0\DIO.Series.pdb
+E:\Everis\Series2\DIO.Series\obj\Debug\net5.0\DIO.Series.dll
+E:\Everis\Series2\DIO.Series\obj\Debug\net5.0\ref\DIO.Series.dll
+E:\Everis\Series2\DIO.Series\obj\Debug\net5.0\DIO.Series.pdb
+E:\Everis\Series2\DIO.Series\obj\Debug\net5.0\DIO.Series.genruntimeconfig.cache
