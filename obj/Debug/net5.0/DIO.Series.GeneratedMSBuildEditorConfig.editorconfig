@@ -7,4 +7,4 @@ build_property.PublishSingleFile =
 build_property.IncludeAllContentForSelfExtract = 
 build_property._SupportedPlatformList = Android,iOS,Linux,macOS,Windows
 build_property.RootNamespace = DIO.Series
-build_property.ProjectDir = E:\Everis\Series2\DIO.Series\
+build_property.ProjectDir = D:\MyCodingEnvironment\Repositories\Console-App-CRUD\

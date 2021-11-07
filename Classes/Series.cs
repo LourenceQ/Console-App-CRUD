@@ -40,11 +40,15 @@ namespace DIO.Series
         {
             return this.Title;
         }
-        internal int IdReturn()
+        public int IdReturn()
         {
             return this.Id;
         }
 
+        public bool ReturnDeleted()
+        {
+            return this.Deleted;
+        }
         public void Delete()
         {
             this.Deleted = true;

@@ -21,7 +21,7 @@ namespace DIO.Series
                         InsertSeries();
                         break;
                     case "3":
-                        //UpdateSeries();
+                        UpdateSeries();
                         break;
                     case "4":
                         //DeleteSeries();
@@ -81,12 +81,44 @@ namespace DIO.Series
             Console.WriteLine("Digite a descriçao da série: " );
             string descriptionInsert = Console.ReadLine();
             
-            Series novaSerie = new Series(id: repository.NextId(),
+            Series newSerie = new Series(id: repository.NextId(),
                                         genre: (Genre)genreInsert,
                                         title: titleInsert,
                                         year: yearInsert,
                                         description: descriptionInsert);
+            repository.Insert(newSerie);
             
+        }
+
+        private static void UpdateSeries()
+        {
+            Console.Write("Digite o id da série: ");
+            int indexSerie = int.Parse(Console.ReadLine());
+
+            foreach (int i in Enum.GetValues(typeof(Genre)))
+            {
+                Console.WriteLine("{0}-{1}", i , Enum.GetName(typeof(Genre), i));
+            }
+
+            Console.Write("Digite o gênero entre as opções acima: ");
+            int genreInput = int.Parse(Console.ReadLine());
+
+            Console.Write("Digite o título da Série: ");
+            string titleInput = Console.ReadLine();
+
+            Console.Write("Digite o Ano de Início da Série: ");
+            int yearInput = int.Parse(Console.ReadLine());
+
+            Console.Write("Digite a Descriçao da Série: ");
+            string descriptionInput = Console.ReadLine();    
+
+            Series updateSerie = new Series(id: indexSerie,
+                                        genre: (Genre)genreInput,
+                                        title: titleInput,
+                                        year: yearInput,
+                                        description : descriptionInput);        
+
+            repository.Update(indexSerie, updateSerie);
         }
 
         private static string GetUserOption()

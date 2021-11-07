@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Everis\\Series2\\DIO.Series\\DIO.Series.csproj": {}
+    "D:\\MyCodingEnvironment\\Repositories\\Console-App-CRUD\\DIO.Series.csproj": {}
   },
   "projects": {
-    "E:\\Everis\\Series2\\DIO.Series\\DIO.Series.csproj": {
+    "D:\\MyCodingEnvironment\\Repositories\\Console-App-CRUD\\DIO.Series.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Everis\\Series2\\DIO.Series\\DIO.Series.csproj",
+        "projectUniqueName": "D:\\MyCodingEnvironment\\Repositories\\Console-App-CRUD\\DIO.Series.csproj",
         "projectName": "DIO.Series",
-        "projectPath": "E:\\Everis\\Series2\\DIO.Series\\DIO.Series.csproj",
+        "projectPath": "D:\\MyCodingEnvironment\\Repositories\\Console-App-CRUD\\DIO.Series.csproj",
         "packagesPath": "C:\\Users\\lqfme\\.nuget\\packages\\",
-        "outputPath": "E:\\Everis\\Series2\\DIO.Series\\obj\\",
+        "outputPath": "D:\\MyCodingEnvironment\\Repositories\\Console-App-CRUD\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
           "C:\\Users\\lqfme\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -58,7 +54,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }
