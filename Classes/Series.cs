@@ -15,7 +15,6 @@ namespace DIO.Series
         private bool Deleted { get; set; }
 
         // Methods
-
         public Series(int id, Genre genre, string title, string description, int year)
         {
             this.Id = id;
@@ -33,9 +32,9 @@ namespace DIO.Series
             regress += "Title: " + this.Title + Environment.NewLine;
             regress += "Description: " + this.Description + Environment.NewLine;
             regress += "Year: " + this.Year;
+            regress += "Deleted: " + this.Deleted;
             return regress;
         }
-
         public string TitleReturn()
         {
             return this.Title;
@@ -44,7 +43,6 @@ namespace DIO.Series
         {
             return this.Id;
         }
-
         public bool ReturnDeleted()
         {
             return this.Deleted;

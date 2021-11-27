@@ -24,7 +24,7 @@ namespace DIO.Series
                         UpdateSeries();
                         break;
                     case "4":
-                        //DeleteSeries();
+                        DeleteSeries();
                         break;
                     case "5":
                         //QuerySeries();
@@ -59,7 +59,6 @@ namespace DIO.Series
                 Console.WriteLine("#ID {0}: - {1}", serie.IdReturn(), serie.TitleReturn());
             }
         }
-
         private static void InsertSeries()
         {
             Console.WriteLine("Inserir uma série");
@@ -89,7 +88,6 @@ namespace DIO.Series
             repository.Insert(newSerie);
             
         }
-
         private static void UpdateSeries()
         {
             Console.Write("Digite o id da série: ");
@@ -120,7 +118,6 @@ namespace DIO.Series
 
             repository.Update(indexSerie, updateSerie);
         }
-
         private static string GetUserOption()
         {
             Console.WriteLine();
@@ -139,6 +136,13 @@ namespace DIO.Series
             string userOption = Console.ReadLine().ToUpper();
             Console.WriteLine();
             return userOption;
+        }
+        private static void DeleteSeries()
+        {
+            Console.WriteLine("Informe o id da série: ");
+            int serieIndex = int.Parse(Console.ReadLine());
+
+            repository.Delete(serieIndex);
         }
     }
 }
