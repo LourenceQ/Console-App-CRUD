@@ -10,7 +10,7 @@ namespace DIO.Series
         {
             string userOption = GetUserOption();
 
-            while(userOption.ToUpper() != "x")
+            while(userOption.ToUpper() != "X")
             {
                 switch(userOption)
                 {
@@ -31,9 +31,9 @@ namespace DIO.Series
                         break;
                     case "C":
                         Console.Clear();
-                        break;
+                        break;                    
                     default:
-                    throw new ArgumentOutOfRangeException();
+                        throw new ArgumentOutOfRangeException();
                 }
 
                 userOption = GetUserOption();
@@ -57,7 +57,8 @@ namespace DIO.Series
             foreach(var serie in list)
             {
                 var deleted = serie.ReturnDeleted();
-                Console.WriteLine("#ID {0}: - {1}", serie.IdReturn(), serie.TitleReturn(), (deleted ? "Deleted" : ""));
+
+                Console.WriteLine("#ID {0}: - {1} - {2}", serie.IdReturn(), serie.TitleReturn(), (deleted ? "Excluido" : "Em estoque"));
             }
         }
         private static void InsertSeries()
@@ -130,7 +131,7 @@ namespace DIO.Series
             Console.WriteLine("3- Atualizar série");
             Console.WriteLine("4- Excluir série");
             Console.WriteLine("5- Visualizar série");
-            Console.WriteLine("C- limpar Tela");
+            Console.WriteLine("C- Limpar Tela");
             Console.WriteLine("X- Sair");
             Console.WriteLine();
 
@@ -154,5 +155,6 @@ namespace DIO.Series
 
             System.Console.WriteLine(serie);
         }
+
     }
 }

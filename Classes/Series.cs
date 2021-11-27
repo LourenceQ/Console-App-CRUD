@@ -31,7 +31,7 @@ namespace DIO.Series
             regress += "Genre: " + this.Genre + Environment.NewLine; 
             regress += "Title: " + this.Title + Environment.NewLine;
             regress += "Description: " + this.Description + Environment.NewLine;
-            regress += "Year: " + this.Year;
+            regress += "Year: " + this.Year + Environment.NewLine;
             regress += "Deleted: " + this.Deleted;
             return regress;
         }
@@ -47,7 +47,7 @@ namespace DIO.Series
         {
             return this.Deleted;
         }
-        public void Delete()
+        public void ToDelete()
         {
             this.Deleted = true;
         }

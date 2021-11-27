@@ -26,7 +26,7 @@ namespace DIO.Series
        
         public void Delete(int id)
         {
-            seriesList[id].Delete();
+            seriesList[id].ToDelete();
         }
  
         public void Update(int id, Series entity)
