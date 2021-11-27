@@ -56,7 +56,8 @@ namespace DIO.Series
             }
             foreach(var serie in list)
             {
-                Console.WriteLine("#ID {0}: - {1}", serie.IdReturn(), serie.TitleReturn());
+                var deleted = serie.ReturnDeleted();
+                Console.WriteLine("#ID {0}: - {1}", serie.IdReturn(), serie.TitleReturn(), (deleted ? "Deleted" : ""));
             }
         }
         private static void InsertSeries()
