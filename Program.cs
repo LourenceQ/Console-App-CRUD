@@ -27,10 +27,10 @@ namespace DIO.Series
                         DeleteSeries();
                         break;
                     case "5":
-                        //QuerySeries();
+                        QuerySeries();
                         break;
                     case "C":
-                        //Clear();
+                        Console.Clear();
                         break;
                     default:
                     throw new ArgumentOutOfRangeException();
@@ -143,6 +143,15 @@ namespace DIO.Series
             int serieIndex = int.Parse(Console.ReadLine());
 
             repository.Delete(serieIndex);
+        }
+        private static void QuerySeries()
+        {
+            System.Console.WriteLine("Informe o id da série: ");
+            int serieIndex = int.Parse(Console.ReadLine());
+
+            var serie = repository.ReturnById(serieIndex);
+
+            System.Console.WriteLine(serie);
         }
     }
 }
